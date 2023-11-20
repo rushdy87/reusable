@@ -1,0 +1,120 @@
+@use '../../styles/base';
+
+.button {
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: base.$light-color;
+  color: base.$dark-color;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: base.$dark-color;
+    color: base.$light-color;
+    font-size: 1.15rem;
+  }
+
+  &:disabled,
+  &:hover:disabled,
+  &:active:disabled {
+    background: #ccc;
+    color: #979797;
+    border-color: #ccc;
+    transform: none;
+    font-size: 1rem;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background-color: base.$primary-color;
+  color: base.$light-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$primary-color;
+    border: 1px solid base.$primary-color;
+  }
+}
+
+.secondary {
+  background-color: base.$secondary-color;
+  color: base.$light-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: 1px solid base.$secondary-color;
+  }
+}
+
+.success {
+  background-color: base.$success-color;
+  color: base.$light-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: 1px solid base.$success-color;
+  }
+}
+
+.info {
+  background-color: base.$info-color;
+  color: base.$dark-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: 1px solid base.$info-color;
+  }
+}
+
+.warning {
+  background-color: base.$warning-color;
+  color: base.$dark-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: 1px solid base.$warning-color;
+  }
+}
+
+.danger {
+  background-color: base.$danger-color;
+  color: base.$light-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$danger-color;
+    border: 1px solid base.$danger-color;
+  }
+}
+
+.light {
+  background-color: base.$light-color;
+  color: base.$dark-color;
+  border: 1px solid base.$dark-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: none;
+  }
+}
+
+.dark {
+  background-color: base.$dark-color;
+  color: base.$light-color;
+
+  &:hover {
+    background-color: base.$light-color;
+    color: base.$dark-color;
+    border: 1px solid base.$dark-color;
+  }
+}
