@@ -1,25 +1,17 @@
-import Button from './components/Button/Button';
+import Input from './components/Input/Input';
 
 const App = () => {
   return (
     <div>
-      <Button>اضغط هنا</Button>
-      <br />
-      <Button className='primary'>اضغط هنا</Button>
-      <br />
-      <Button className='secondary'>اضغط هنا</Button>
-      <br />
-      <Button className='success'>اضغط هنا</Button>
-      <br />
-      <Button className='info'>اضغط هنا</Button>
-      <br />
-      <Button className='warning'>اضغط هنا</Button>
-      <br />
-      <Button className='danger'>اضغط هنا</Button>
-      <br />
-      <Button className='light'>اضغط هنا</Button>
-      <br />
-      <Button className='dark'>اضغط هنا</Button>
+      <Input
+        label='الاسم'
+        type='text'
+        id='name'
+        name='name'
+        placeholder='الاسم'
+      />
+      <Input label='رقم الحاسبة' type='number' />
+      <Input label='تاريخ المباشرة' type='date' />
     </div>
   );
 };
